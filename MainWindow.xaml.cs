@@ -24,12 +24,9 @@ namespace WpfApp1_events
         {
             InitializeComponent();
         }
-
-       
-
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+            Label_1.Content = TextBox1.Text;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -44,7 +41,7 @@ namespace WpfApp1_events
             TextBox1.Text = "esk";
         }
 
-        private void Window_KeyDown(object sender, KeyEventArgs e)
+        public void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
@@ -54,6 +51,19 @@ namespace WpfApp1_events
             {
                 Button_Click_2(Button2, null);
             }
+        }
+
+      
+
+        private void TextBox1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox1.Clear();
+           
+        }
+
+        private void Label_1_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
 
 
