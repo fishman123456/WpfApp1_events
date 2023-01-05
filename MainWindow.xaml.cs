@@ -63,8 +63,18 @@ namespace WpfApp1_events
 
         private void Label_1_Loaded(object sender, RoutedEventArgs e)
         {
-           
+            Label_1.Content = "загрузилось";
         }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
+
+
+
 
 
 

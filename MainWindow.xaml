@@ -24,7 +24,8 @@
             <Button Name="Button2" Content="Button2" Grid.Row="3" Grid.Column="2" Click="Button_Click_2" Margin="0,108,0,0" Grid.RowSpan="2"   />
             <Label Name="Label_1" Content="Label1" Grid.Row="2" Loaded="Label_1_Loaded"/>
         </Grid>
-        <TextBox Name="TextBox1" TextWrapping="Wrap" Text="TextBox" Height="100" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" MouseEnter="TextBox1_MouseEnter" />
+        <TextBox Name="TextBox1" TextWrapping="Wrap" Text="TextBox" Height="100" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" MouseEnter="TextBox1_MouseEnter" Grid.Row="1" Width="400" HorizontalAlignment="Left" />
         <TextBlock x:Name="TextBlock" TextWrapping="Wrap" Margin="224,100,230,286" Grid.RowSpan="1" FontSize="20" TextAlignment="Center"><Run Language="ru-ru" Text="Здесь подают обьявления"/></TextBlock>
+        <Rectangle Stroke="Black" Fill="#FF2AB540" Margin="0,217,0,129" />
     </Grid>
 </Window>
